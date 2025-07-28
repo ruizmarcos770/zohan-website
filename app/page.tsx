@@ -40,9 +40,9 @@ export default function ZohanLanding() {
     window.open(`https://wa.me/543815711293?text=${encodeURIComponent(message)}`, "_blank")
   }
 
-  const whatsappCTA = () => {
-    window.open("https://wa.me/543815711293?text=Hola! Quiero cotizar importación de insumos", "_blank")
-  }
+ const whatsappCTA = () => {
+  window.open("https://wa.me/543815711293?text=Hola! Quiero cotizar importación de insumos", "_blank")
+}
 
   return (
     <div className="min-h-screen bg-white">
