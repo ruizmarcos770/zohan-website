@@ -4,9 +4,8 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ZOHAN',
-  description: 'Importadora Argentina',
-  generator: 'v0.dev',
+  title: "ZOHAN - Importación de Insumos",
+  description: "Especialistas en importación de insumos para exportación. La única empresa argentina liderada por alguien que recorre fábricas en China.",
 }
 
 export default function RootLayout({
