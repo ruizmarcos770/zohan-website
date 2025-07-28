@@ -54,8 +54,8 @@ export default function ZohanLanding() {
               <Image
                 src="/images/zohan-logo.png"
                 alt="ZOHAN - Importación de Insumos"
-                width={180}
-                height={90}
+                width={360}
+                height={180}
                 className="h-16 w-auto md:h-20"
                 priority
               />
@@ -65,7 +65,7 @@ export default function ZohanLanding() {
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Cotizar Ahora
               </Button>
-              <a href="tel:+5493814XXXXXX" className="inline-flex items-center justify-center rounded-md border border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent px-4 py-2 text-sm font-medium transition-colors">
+              <a href="tel:+5493815711293" className="inline-flex items-center justify-center rounded-md border border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent px-4 py-2 text-sm font-medium transition-colors">
   <Phone className="w-4 h-4 mr-2" />
   Llamar
 </a>
