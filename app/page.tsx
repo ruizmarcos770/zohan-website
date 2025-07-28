@@ -51,10 +51,10 @@ export default function ZohanLanding() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <Image
+            <Image
   src="/images/zohan-logo.png"
   alt="ZOHAN - Importación de Insumos"
-  width={300}   // ← Aún más grande
+  width={300}
   height={150}
   className="h-24 w-auto md:h-28"
   priority
