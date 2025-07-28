@@ -415,7 +415,7 @@ export default function ZohanLanding() {
 
               <AccordionItem value="item-2" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left">¿Desde qué volumen puedo operar?</AccordionTrigger>
-                <AccordionContent>Desde USD 2.000 en adelante.</AccordionContent>
+                <AccordionContent>Desde USD 10.000 en adelante.</AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border rounded-lg px-6">
@@ -436,7 +436,7 @@ export default function ZohanLanding() {
       <section className="py-16 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">¡Atención exportadores 2024/2025!</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">¡Atención exportadores 2025/2026!</h2>
             <p className="text-xl mb-8 opacity-90">
               Los cupos para gestión personalizada están limitados por logística al mes. Si querés ahorrar y estar listo
               para la próxima temporada, solicitá tu cotización ahora.
@@ -449,11 +449,11 @@ export default function ZohanLanding() {
               >
                 <MessageCircle className="w-5 h-5 mr-2" />📲 COTIZÁ YA POR WHATSAPP
               </Button>
-              <Button
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-orange-600 text-lg px-8 py-4 bg-transparent"
-              >
-                <Phone className="w-5 h-5 mr-2" />
+              </Button>
+              <a href="tel:+5493815711293" className="inline-flex items-center justify-center rounded-md border border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent px-4 py-2 text-sm font-medium transition-colors">
+  <Phone className="w-4 h-4 mr-2" />
+  Llamar
+</a>
                 Llamar ahora
               </Button>
             </div>
