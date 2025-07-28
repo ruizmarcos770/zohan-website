@@ -6,6 +6,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: "ZOHAN - Importación de Insumos",
   description: "Especialistas en importación de insumos para exportación. La única empresa argentina liderada por alguien que recorre fábricas en China.",
+icons: {
+    icon: '/Favicon-zohan.png', // o favicon.ico
+  }
 }
 
 export default function RootLayout({
