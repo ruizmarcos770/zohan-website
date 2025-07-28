@@ -51,14 +51,14 @@ export default function ZohanLanding() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <Image
-                src="/images/zohan-logo.png"
-                alt="ZOHAN - Importación de Insumos"
-                width={360}
-                height={180}
-                className="h-16 w-auto md:h-20"
-                priority
-              />
+              <image
+  src="/images/zohan-logo.png"
+  alt="ZOHAN - Importación de Insumos"
+  width={300}   // ← Aún más grande
+  height={150}
+  className="h-24 w-auto md:h-28"
+  priority
+/>
             </div>
             <div className="hidden md:flex items-center gap-4">
               <Button onClick={whatsappCTA} className="bg-green-600 hover:bg-green-700 text-white">
