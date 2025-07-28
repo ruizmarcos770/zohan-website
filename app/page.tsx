@@ -65,10 +65,10 @@ export default function ZohanLanding() {
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Cotizar Ahora
               </Button>
-              <Button variant="outline" className="border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent">
-                <Phone className="w-4 h-4 mr-2" />
-                Llamar
-              </Button>
+              <a href="tel:+5493814XXXXXX" className="inline-flex items-center justify-center rounded-md border border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent px-4 py-2 text-sm font-medium transition-colors">
+  <Phone className="w-4 h-4 mr-2" />
+  Llamar
+</a>
             </div>
           </div>
         </div>
