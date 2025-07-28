@@ -4,7 +4,7 @@ export default function TerminosUso() {
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">Términos de Uso</h1>
         <div className="prose prose-lg max-w-none space-y-6">
-          {TÉRMINOS DE USO
+          {
 ZOHAN VENTURE S.A.S. – versión julio de 2025
 
 Titular del sitio: ZOHAN VENTURE S.A.S.
@@ -24,14 +24,6 @@ El acceso está permitido únicamente a mayores de 18 años o a menores con auto
 
 4. Propiedad intelectual
 Todos los contenidos (textos, imágenes, diseños, software, marcas, etc.) son propiedad de ZOHAN VENTURE S.A.S. o de terceros que han autorizado su uso. Se prohíbe su reproducción, distribución, adaptación o explotación sin autorización expresa 
-iplan.com.ar
-+5
-vichyargentina.com.ar
-+5
-Argentina.gob.ar
-+5
-The Nature Conservancy
-.
 
 5. Enlaces a sitios de terceros
 El sitio puede incluir enlaces o referencias a sitios externos. ZOHAN VENTURE S.A.S. no se responsabiliza por los contenidos, prácticas o políticas de privacidad de esos sitios relacionados.
@@ -41,8 +33,7 @@ ZOHAN VENTURE S.A.S. se reserva el derecho de modificar los términos y condicio
 
 7. Exclusión de responsabilidad
 ZOHAN VENTURE S.A.S. no se responsabiliza por daños o pérdidas derivados del uso del sitio, errores temporales, interrupciones del servicio, o contenidos enlazados de terceros 
-Argentina.gob.ar
-.
+
 
 8. Legislación aplicable y jurisdicción
 Estos Términos se rigen por las leyes de la República Argentina, en particular el Código Civil y Comercial y la Ley 25.326 de Protección de Datos Personales. Para cualquier conflicto, las partes se someten a los tribunales competentes de Argentina.
