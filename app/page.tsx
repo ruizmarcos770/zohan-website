@@ -525,12 +525,12 @@ export default function ZohanLanding() {
             <div className="border-t border-gray-700 pt-8 text-center">
               <p className="text-gray-400 mb-4">Respaldados por la confianza de los top exporters argentinos.</p>
               <div className="flex justify-center gap-6 text-sm text-gray-400">
-                <a href="#" className="hover:text-white">
-                  Política de privacidad
-                </a>
-                <a href="#" className="hover:text-white">
-                  Términos de uso
-                </a>
+                <a href="/politica-privacidad" className="hover:text-white">
+  Política de privacidad
+</a>
+                <a href="/terminos-uso" className="hover:text-white">
+  Términos de uso
+</a>
                 <a href="#" className="hover:text-white">
                   LinkedIn
                 </a>
