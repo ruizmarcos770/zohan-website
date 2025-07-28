@@ -169,7 +169,7 @@ export default function ZohanLanding() {
                     <h3 className="font-semibold text-lg mb-2">
                       Especialistas en importación de insumos para exportación
                     </h3>
-                    <p className="text-gray-600">Bolsas, BIG BAGS, cajas y más</p>
+                    <p className="text-gray-600">Bolsas y BIG BAGS de PP, cajas, maquinaria y más</p>
                   </div>
                 </div>
 
@@ -223,9 +223,9 @@ export default function ZohanLanding() {
                     required
                   >
                     <option value="">Producto a importar</option>
-                    <option value="bolsas">Bolsas</option>
-                    <option value="big-bags">Big Bags</option>
-                    <option value="cajas">Cajas</option>
+                    <option value="bolsas">Bolsas y/o BIG BAGS</option>
+                    <option value="big-bags">Cajas</option>
+                    <option value="cajas">Maqiunaria</option>
                     <option value="otro">Otro</option>
                   </select>
                   <Input
