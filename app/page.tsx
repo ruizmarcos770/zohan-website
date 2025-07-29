@@ -22,7 +22,7 @@ import {
   FileCheck,
   Globe,
 } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function ZohanLanding() {
   const [formData, setFormData] = useState({
