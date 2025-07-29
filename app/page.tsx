@@ -30,7 +30,8 @@ export default function ZohanLanding() {
     empresa: "",
     contacto: "",
     producto: "",
-    volumen: "",})
+    volumen: "",
+  })
 
   // Estado para el carrusel de imágenes
   const [currentImage, setCurrentImage] = useState(0)
@@ -43,7 +44,6 @@ export default function ZohanLanding() {
     
     return () => clearInterval(interval)
   }, [])
-
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
