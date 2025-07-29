@@ -134,7 +134,7 @@ export default function ZohanLanding() {
             </h1>
 
             <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto drop-shadow">
-              Soluciones integrales para exportadores argentinos que quieren ahorrar y operar sin estrés.
+              Soluciones integrales para exportadores argentinos que buscan reducir costos y operar sin estrés.
               <strong className="text-orange-300"> COTIZÁ AHORA</strong> y descubrí cuánto podés ganar en tu próxima
               exportación.
             </p>
@@ -222,7 +222,7 @@ export default function ZohanLanding() {
                     <h3 className="font-semibold text-lg mb-2">
                       Especialistas en importación de insumos para exportación
                     </h3>
-                    <p className="text-gray-600">Bolsas y BIG BAGS de PP, cajas, maquinaria y más</p>
+                    <p className="text-gray-600">Bolsas y BIG BAGS de PP, cajas y más</p>
                   </div>
                 </div>
 
@@ -358,18 +358,18 @@ export default function ZohanLanding() {
 
             <div className="space-y-8">
               {[
-                { step: 1, title: "Nos contás qué insumo necesitás", icon: MessageCircle },
+                { step: 1, title: "Nos contás qué insumo necesitás por whatsapp, llamada o mail. Contacto directo con el dueño.", icon: MessageCircle },
                 {
                   step: 2,
-                  title: "Cotizás por WhatsApp y recibís opciones concretas con precios y tiempos claros",
+                  title: "Hacemos primera evaluación y recibís opciones concretas con precios y tiempos claros. Sin compromiso.",
                   icon: Phone,
                 },
                 {
                   step: 3,
-                  title: "Hacemos todo el trámite (compra, aduana, certificado, logística internacional)",
+                  title: "Al confirmar, hacemos todo el trámite (compra, aduana, certificado, logística internacional)",
                   icon: FileCheck,
                 },
-                { step: 4, title: "Te informamos en cada etapa", icon: Eye },
+                { step: 4, title: "Te informamos en cada etapa, actuamos como tu representante con la fábrica", icon: Eye },
                 { step: 5, title: "Recibís el insumo en tu planta listo para exportar", icon: Truck },
               ].map(({ step, title, icon: Icon }) => (
                 <div key={step} className="flex items-start gap-4">
@@ -421,7 +421,7 @@ export default function ZohanLanding() {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4">
-                  "Marcos viajó a China para seleccionar proveedores. Es confianza pura."
+                  "Marcos viajó a China, visitó fárbicas y confiamos en él para seleccionar proveedores de calidad"
                 </p>
                 <div className="font-semibold">— Lucía T., Emprendedora Agro</div>
               </div>
@@ -462,13 +462,13 @@ export default function ZohanLanding() {
               <AccordionItem value="item-1" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left">¿Solo bolsas y cajas?</AccordionTrigger>
                 <AccordionContent>
-                  No, importamos cualquier insumo para exportación que pueda aplicar a régimen temporario.
+                  No, importamos cualquier insumo para exportación que pueda aplicar a régimen temporario. También hacemos la gestión de importación de otros productos como maquinaria de construcción, equipos de limpieza, etcétera.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left">¿Desde qué volumen puedo operar?</AccordionTrigger>
-                <AccordionContent>Desde USD 2.000 en adelante.</AccordionContent>
+                <AccordionContent>Desde USD 10.000 en adelante.</AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border rounded-lg px-6">
@@ -489,7 +489,7 @@ export default function ZohanLanding() {
       <section className="py-16 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">¡Atención exportadores 2024/2025!</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">¡Atención exportadores 2025/2026!</h2>
             <p className="text-xl mb-8 opacity-90">
               Los cupos para gestión personalizada están limitados por logística al mes. Si querés ahorrar y estar listo
               para la próxima temporada, solicitá tu cotización ahora.
