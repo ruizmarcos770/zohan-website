@@ -30,7 +30,21 @@ export default function ZohanLanding() {
     empresa: "",
     contacto: "",
     producto: "",
-    volumen: "",
+    volumen: "",})
+
+  // Estado para el carrusel de imágenes
+  const [currentImage, setCurrentImage] = useState(0)
+
+  // Auto-rotate images every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % 3)
+    }, 5000)
+    
+    return () => clearInterval(interval)
+  }, [])
+
+  const handleSubmit = (e: React.FormEvent) => {
   })
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -87,16 +101,44 @@ export default function ZohanLanding() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 to-orange-50 py-12 md:py-20">
-        <div className="container mx-auto px-4">
+     {/* Hero Section with Image Carousel */}
+      <section className="relative py-12 md:py-20 overflow-hidden">
+        {/* Background Image Carousel */}
+        <div className="absolute inset-0">
+          {[
+            "/images/banner1.png",
+            "/images/banner2.png", 
+            "/images/banner5.png"
+          ].map((image, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                currentImage === index ? 'opacity-70' : 'opacity-0'
+              }`}
+            >
+              <Image
+                src={image}
+                alt={`Banner ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
+              />
+            </div>
+          ))}
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-green-900/40 to-orange-900/40"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Importá Insumos Clave, <span className="text-green-600">Bajá Tus Costos Ya</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+              Importá Insumos Clave, <span className="text-green-300">Bajá Tus Costos Ya</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto drop-shadow">
               Soluciones integrales para exportadores argentinos que quieren ahorrar y operar sin estrés.
-              <strong className="text-orange-600"> COTIZÁ AHORA</strong> y descubrí cuánto podés ganar en tu próxima
+              <strong className="text-orange-300"> COTIZÁ AHORA</strong> y descubrí cuánto podés ganar en tu próxima
               exportación.
             </p>
 
@@ -109,33 +151,47 @@ export default function ZohanLanding() {
               </Button>
               <Button
                 variant="outline"
-                className="border-orange-500 text-orange-600 hover:bg-orange-50 text-lg px-8 py-4 bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-orange-600 text-lg px-8 py-4 bg-white/20 backdrop-blur"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Llamar Ahora
               </Button>
             </div>
 
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-600">
+            <div className="flex items-center justify-center gap-4 text-sm text-white/90">
               <div className="flex items-center gap-1">
-                <Star className="w-4 h-4 text-yellow-500" />
+                <Star className="w-4 h-4 text-yellow-400" />
                 <span>+10 años de experiencia</span>
               </div>
               <div className="flex items-center gap-1">
-                <MapPin className="w-4 h-4 text-green-600" />
+                <MapPin className="w-4 h-4 text-green-300" />
                 <span>
                   Oficinas en{" "}
-                  <a
+                  
                     href="https://maps.app.goo.gl/xr4sAcGDimK4P9RN6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
                      Yerba Buena,Tucumán
-                  </a>{" "}
-              
+                  </a>
                 </span>
               </div>
+            </div>
+
+            {/* Carousel Navigation Dots */}
+            <div className="flex justify-center gap-2 mt-8">
+              {[0, 1, 2].map((index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImage(index)}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    currentImage === index 
+                      ? 'bg-white' 
+                      : 'bg-white/50 hover:bg-white/75'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
