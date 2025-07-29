@@ -103,9 +103,9 @@ export default function ZohanLanding() {
         {/* Background Image Carousel */}
         <div className="absolute inset-0">
           {[
-            "/images/banner1.png",
-            "/images/banner2.png", 
-            "/images/banner5.png"
+            "/public/images/banner1.png",
+            "/public/images/banner2.png", 
+            "/public/images/banner5.png"
           ].map((image, index) => (
             <div
               key={index}
