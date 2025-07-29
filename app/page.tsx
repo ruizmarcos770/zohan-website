@@ -529,7 +529,7 @@ export default function ZohanLanding() {
         <div className="order-2 md:order-1">
           <div className="rounded-lg overflow-hidden shadow-lg border-2 border-green-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5994999999997!2d-65.31472!3d-26.816667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQ5JzAwLjAiUyA2NcKwMTgnNTMuMCJX!5e0!3m2!1ses!2sar!4v1635000000000!5m2!1ses!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2172349332864!2d-65.29496602414422!3d-26.801210788555032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224316ca637e55%3A0x894cd03dc99bf379!2sZOHAN%20VENTURE%20S.A.S!5e0!3m2!1ses!2sar!4v1753824058975!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               width="100%"
               height="400"
               style={{ border: 0 }}
