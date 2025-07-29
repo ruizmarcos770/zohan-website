@@ -520,7 +520,7 @@ export default function ZohanLanding() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Nuestra Ubicación</h2>
         <p className="text-gray-600 text-lg">
-          Visitanos en nuestras oficinas en Yerba Buena, Tucumán
+          Visitanos en nuestras oficinas de ZOHAN VENTURE S.A.S. en Yerba Buena, Tucumán
         </p>
       </div>
       
@@ -529,14 +529,14 @@ export default function ZohanLanding() {
         <div className="order-2 md:order-1">
           <div className="rounded-lg overflow-hidden shadow-lg border-2 border-green-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2172349332864!2d-65.29496602414422!3d-26.801210788555032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224316ca637e55%3A0x894cd03dc99bf379!2sZOHAN%20VENTURE%20S.A.S!5e0!3m2!1ses!2sar!4v1753824058975!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2172349332864!2d-65.29496602414422!3d-26.801210788555032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94224316ca637e55%3A0x894cd03dc99bf379!2sZOHAN%20VENTURE%20S.A.S!5e0!3m2!1ses!2sar!4v1753824058975!5m2!1ses!2sar"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación ZOHAN - Yerba Buena, Tucumán"
+              title="ZOHAN VENTURE S.A.S - Yerba Buena, Tucumán"
             />
           </div>
         </div>
@@ -553,8 +553,16 @@ export default function ZohanLanding() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold">Dirección:</p>
+                  <p className="font-semibold">ZOHAN VENTURE S.A.S.</p>
                   <p>Yerba Buena, Tucumán, Argentina</p>
+                  <a 
+                    href="https://maps.app.goo.gl/TeVYygAUerBb1Vre9"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="text-green-600 hover:underline text-sm mt-1 inline-block"
+                  >
+                    Ver en Google Maps →
+                  </a>
                 </div>
               </div>
               
@@ -579,6 +587,16 @@ export default function ZohanLanding() {
                     className="text-green-600 hover:underline"
                   >
                     Enviar mensaje
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Globe className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Email:</p>
+                  <a href="mailto:info@zohan.com.ar" className="text-blue-600 hover:underline">
+                    info@zohan.com.ar
                   </a>
                 </div>
               </div>
