@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
+import Script from 'next/script' //linea agregada
 
 export const metadata: Metadata = {
   title: "ZOHAN - Importación de Insumos",
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <style>{`
 html {
@@ -27,6 +28,21 @@ html {
 }
         `}</style>
       </head>
+       {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-TJ407RM58J"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TJ407RM58J');
+        `}
+      </Script>
+      
+      <body>{children}</body>
       <body>{children}</body>
     </html>
   )
