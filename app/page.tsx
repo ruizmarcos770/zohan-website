@@ -513,7 +513,92 @@ export default function ZohanLanding() {
           </div>
         </div>
       </section>
+{/* Google Maps Section */}
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Nuestra Ubicación</h2>
+        <p className="text-gray-600 text-lg">
+          Visitanos en nuestras oficinas en Yerba Buena, Tucumán
+        </p>
+      </div>
+      
+      <div className="grid md:grid-cols-2 gap-8 items-center">
+        {/* Mapa */}
+        <div className="order-2 md:order-1">
+          <div className="rounded-lg overflow-hidden shadow-lg border-2 border-green-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5994999999997!2d-65.31472!3d-26.816667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQ5JzAwLjAiUyA2NcKwMTgnNTMuMCJX!5e0!3m2!1ses!2sar!4v1635000000000!5m2!1ses!2sar"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación ZOHAN - Yerba Buena, Tucumán"
+            />
+          </div>
+        </div>
 
+        {/* Información de contacto */}
+        <div className="order-1 md:order-2 space-y-6">
+          <div className="bg-green-50 p-6 rounded-lg border border-green-200">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-green-600" />
+              Información de Contacto
+            </h3>
+            
+            <div className="space-y-4 text-gray-700">
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Dirección:</p>
+                  <p>Yerba Buena, Tucumán, Argentina</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-orange-600 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Teléfono:</p>
+                  <a href="tel:+5493815711293" className="text-orange-600 hover:underline">
+                    +54 381 571-1293
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3">
+                <MessageCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">WhatsApp:</p>
+                  <a 
+                    href="https://wa.me/543815711293" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:underline"
+                  >
+                    Enviar mensaje
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-green-200">
+              <Button
+                onClick={whatsappCTA}
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+              >
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Contactar por WhatsApp
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
