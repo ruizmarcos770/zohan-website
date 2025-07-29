@@ -64,13 +64,13 @@ export default function ZohanLanding() {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <Image
-  src="/images/zohan-logo.png"
-  alt="ZOHAN - Importación de Insumos"
-  width={300}   // ← Aún más grande
-  height={150}
-  className="h-24 w-auto md:h-28"
-  priority
-/>
+                src="/images/zohan-logo.png"
+                alt="ZOHAN - Importación de Insumos"
+                width={300}
+                height={150}
+                className="h-24 w-auto md:h-28"
+                priority
+              />
             </div>
             <div className="hidden md:flex items-center gap-4">
               <Button onClick={whatsappCTA} className="bg-green-600 hover:bg-green-700 text-white">
@@ -78,9 +78,9 @@ export default function ZohanLanding() {
                 Cotizar Ahora
               </Button>
               <a href="tel:+5493815711293" className="inline-flex items-center justify-center rounded-md border border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent px-4 py-2 text-sm font-medium transition-colors">
-  <Phone className="w-4 h-4 mr-2" />
-  Llamar
-</a>
+                <Phone className="w-4 h-4 mr-2" />
+                Llamar
+              </a>
             </div>
           </div>
         </div>
@@ -98,8 +98,7 @@ export default function ZohanLanding() {
         </Button>
       </div>
 
-      {/* Hero Section */}
-     {/* Hero Section with Image Carousel */}
+      {/* Hero Section with Image Carousel */}
       <section className="relative py-12 md:py-20 overflow-hidden">
         {/* Background Image Carousel */}
         <div className="absolute inset-0">
@@ -162,19 +161,19 @@ export default function ZohanLanding() {
                 <span>+10 años de experiencia</span>
               </div>
               <div className="flex items-center gap-1">
-  <MapPin className="w-4 h-4 text-green-300" />
-  <span>
-    Oficinas en{" "}
-    
-      href="https://maps.app.goo.gl/xr4sAcGDimK4P9RN6"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:underline"
-    >
-       Yerba Buena,Tucumán
-    </a>
-  </span>
-</div>
+                <MapPin className="w-4 h-4 text-green-300" />
+                <span>
+                  Oficinas en{" "}
+                  <a
+                    href="https://maps.app.goo.gl/xr4sAcGDimK4P9RN6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                     Yerba Buena,Tucumán
+                  </a>
+                </span>
+              </div>
             </div>
 
             {/* Carousel Navigation Dots */}
@@ -279,7 +278,7 @@ export default function ZohanLanding() {
                     <option value="">Producto a importar</option>
                     <option value="bolsas">Bolsas y/o BIG BAGS</option>
                     <option value="big-bags">Cajas</option>
-                    <option value="cajas">Maqiunaria</option>
+                    <option value="cajas">Maquinaria</option>
                     <option value="otro">Otro</option>
                   </select>
                   <Input
@@ -580,11 +579,11 @@ export default function ZohanLanding() {
               <p className="text-gray-400 mb-4">Respaldados por la confianza de los top exporters argentinos.</p>
               <div className="flex justify-center gap-6 text-sm text-gray-400">
                 <a href="/politica-privacidad" className="hover:text-white">
-  Política de privacidad
-</a>
+                  Política de privacidad
+                </a>
                 <a href="/terminos-uso" className="hover:text-white">
-  Términos de uso
-</a>
+                  Términos de uso
+                </a>
                 <a href="#" className="hover:text-white">
                   LinkedIn
                 </a>
