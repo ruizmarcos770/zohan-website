@@ -44,8 +44,6 @@ export default function ZohanLanding() {
     return () => clearInterval(interval)
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
-  })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -164,19 +162,19 @@ export default function ZohanLanding() {
                 <span>+10 años de experiencia</span>
               </div>
               <div className="flex items-center gap-1">
-                <MapPin className="w-4 h-4 text-green-300" />
-                <span>
-                  Oficinas en{" "}
-                  
-                    href="https://maps.app.goo.gl/xr4sAcGDimK4P9RN6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                     Yerba Buena,Tucumán
-                  </a>
-                </span>
-              </div>
+  <MapPin className="w-4 h-4 text-green-300" />
+  <span>
+    Oficinas en{" "}
+    
+      href="https://maps.app.goo.gl/xr4sAcGDimK4P9RN6"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+       Yerba Buena,Tucumán
+    </a>
+  </span>
+</div>
             </div>
 
             {/* Carousel Navigation Dots */}
